@@ -1,0 +1,9 @@
+# Legacy-Code Analyse - Upload Verzeichnis
+# Dieses Verzeichnis ist für die Analyse von Quellcode gedacht
+# und wird NICHT ins Repository committed
+
+# Alle Dateien ignorieren, außer dieser .gitignore und README
+*
+!.gitignore
+!README.md
+!.gitkeep
