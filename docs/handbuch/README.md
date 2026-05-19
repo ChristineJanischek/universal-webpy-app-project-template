@@ -55,6 +55,7 @@ ls routinen/langfristig/        # Jährlich/Strategisch
 - **[PFLICHTENHEFT.md](PFLICHTENHEFT.md)** - Alles über das System & Anforderungen
 - **[ARCHITEKTUR.md](ARCHITEKTUR.md)** - Wie das System funktioniert
 - **[MARSCHPLAN.md](marschplaene/HAUPTMARSCHPLAN.md)** - Zeitplan & Meilenstones
+- **[marschplaene/MARSCHLPLAN_PyApp.md](marschplaene/MARSCHLPLAN_PyApp.md)** - Marschplan fuer die Webapp des VolleyballspielerManagers
 
 ### 📋 Prozesse  
 - **[prozesse/neue-routine-erstellen.md](prozesse/neue-routine-erstellen.md)** - Anleitung neue Routine

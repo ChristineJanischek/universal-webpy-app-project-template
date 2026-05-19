@@ -13,6 +13,7 @@
 1. **[PFLICHTENHEFT.md](PFLICHTENHEFT.md)** - Anforderungen, Ziele, Umfang
 2. **[ARCHITEKTUR.md](ARCHITEKTUR.md)** - System-Design, Komponenten, Datenfluss
 3. **[MARSCHPLAN.md](marschplaene/HAUPTMARSCHPLAN.md)** - Phasen, Milestones, Zeitplan
+4. **[marschplaene/MARSCHLPLAN_PyApp.md](marschplaene/MARSCHLPLAN_PyApp.md)** - Umsetzungsplan fuer die Webapp des VolleyballspielerManagers
 
 ### 🧪 Anleitungen & Live-Tests
 - **[anleitungen/java-live-test.md](anleitungen/java-live-test.md)** - Java-App kompilieren, Modell-Tests & GUI starten
@@ -67,6 +68,11 @@
 - Aktuelle Phase
 - Todos & Meilestones
 - Aufwandschätzung
+
+### ...die Webapp mit Volleyball-Manager umsetzen → [marschplaene/MARSCHLPLAN_PyApp.md](marschplaene/MARSCHLPLAN_PyApp.md)
+- Zielbild fuer Theme, Navigation und Formulare
+- Schrittfolge fuer Refactoring, API und Frontend
+- Risiken und erster sinnvoller Meilenstein
 
 ---
 
