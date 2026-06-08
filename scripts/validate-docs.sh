@@ -15,9 +15,9 @@ required_files=(
   "docs/handbuch/PFLICHTENHEFT.md"
   "docs/handbuch/ARCHITEKTUR.md"
   "docs/handbuch/marschplaene/HAUPTMARSCHPLAN.md"
-  "docs/handbuch/prozesse/review-prozess.md"
-  "docs/handbuch/prozesse/qualitaets-gates-automatisierung.md"
-  "docs/handbuch/anleitungen/java-live-test.md"
+  "docs/handbuch/prozesse/REVIEW-PROZESS.md"
+  "docs/handbuch/prozesse/QUALITAETS-GATES-AUTOMATISIERUNG.md"
+  "docs/handbuch/anleitungen/JAVA-LIVE-TEST.md"
 )
 
 for file in "${required_files[@]}"; do

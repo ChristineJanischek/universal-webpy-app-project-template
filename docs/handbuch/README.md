@@ -9,7 +9,7 @@
 ### Ich möchte... eine neue Routine erstellen
 
 1. **Prozess vorbereiten** (2 Min):
-   - Lesen: [prozesse/neue-routine-erstellen.md](prozesse/neue-routine-erstellen.md)
+   - Lesen: [prozesse/NEUE-ROUTINE-ERSTELLEN.md](prozesse/NEUE-ROUTINE-ERSTELLEN.md)
    - Fragen? Siehe Beispiel unten
 
 2. **Datei erstellen** (1 Min):
@@ -21,7 +21,7 @@
 
 3. **Ausfüllen & Review** (2 Min Setup):
    - Nutze [templates/ROUTINE-TEMPLATE.md](templates/ROUTINE-TEMPLATE.md)
-   - Siehe Beispiel: [templates/beispiel-routine.md](templates/beispiel-routine.md)
+   - Siehe Beispiel: [templates/BEISPIEL-ROUTINE.md](templates/BEISPIEL-ROUTINE.md)
    - Öffne Pull Request zum Review
 
 ### Ich möchte... eine existierende Routine finden
@@ -38,35 +38,38 @@ ls routinen/langfristig/        # Jährlich/Strategisch
 
 ### Ich möchte... Redundanzen finden/beheben
 
-→ Siehe: [prozesse/redundanz-management.md](prozesse/redundanz-management.md)
+→ Siehe: [prozesse/REDUNDANZ-MANAGEMENT.md](prozesse/REDUNDANZ-MANAGEMENT.md)
 
 ### Ich möchte... eine Routine updaten
 
-→ Siehe: [prozesse/routine-aktualisieren.md](prozesse/routine-aktualisieren.md)
+→ Siehe: [prozesse/ROUTINE-AKTUALISIEREN.md](prozesse/ROUTINE-AKTUALISIEREN.md)
 
 ---
 
 ## 📖 Dokumentation
 
 ### 🧪 Live-Tests & Anleitungen
-- **[anleitungen/java-live-test.md](anleitungen/java-live-test.md)** - Java-App testen: Headless-Test im Codespace & GUI lokal starten
+- **[anleitungen/JAVA-LIVE-TEST.md](anleitungen/JAVA-LIVE-TEST.md)** - Java-App testen: Headless-Test im Codespace & GUI lokal starten
+- **[anleitungen/MYTHEME-MVC-ERWEITERUNG.md](anleitungen/MYTHEME-MVC-ERWEITERUNG.md)** - MyTheme als mobile MVC-Webapp erweitern (PHP und Python)
+- **[anleitungen/GETRAENKEAUTOMAT-PHP-SCHRITT-FUER-SCHRITT.md](anleitungen/GETRAENKEAUTOMAT-PHP-SCHRITT-FUER-SCHRITT.md)** - Schueler-Anleitung: kleinen Getraenkeautomaten mit PHP implementieren und testen
+- **[anleitungen/GETRAENKEAUTOMAT-PYTHON-SCHRITT-FUER-SCHRITT.md](anleitungen/GETRAENKEAUTOMAT-PYTHON-SCHRITT-FUER-SCHRITT.md)** - Schueler-Anleitung: kleinen Getraenkeautomaten mit Python implementieren und testen
 
 ### 🔧 Grundlagen & Setup
 - **[PFLICHTENHEFT.md](PFLICHTENHEFT.md)** - Alles über das System & Anforderungen
 - **[ARCHITEKTUR.md](ARCHITEKTUR.md)** - Wie das System funktioniert
 - **[MARSCHPLAN.md](marschplaene/HAUPTMARSCHPLAN.md)** - Zeitplan & Meilenstones
-- **[marschplaene/MARSCHLPLAN_PyApp.md](marschplaene/MARSCHLPLAN_PyApp.md)** - Marschplan fuer die Webapp des VolleyballspielerManagers
+- **[marschplaene/MARSCHLPLAN_PYAPP.md](marschplaene/MARSCHLPLAN_PYAPP.md)** - Marschplan fuer die Webapp des VolleyballspielerManagers
 
 ### 📋 Prozesse  
-- **[prozesse/neue-routine-erstellen.md](prozesse/neue-routine-erstellen.md)** - Anleitung neue Routine
-- **[prozesse/redundanz-management.md](prozesse/redundanz-management.md)** - Redundanzen eliminieren
-- **[prozesse/review-prozess.md](prozesse/review-prozess.md)** - Review & Genehmigung
-- **[prozesse/routine-aktualisieren.md](prozesse/routine-aktualisieren.md)** - Bestehende Routine ändern
-- **[prozesse/qualitaets-gates-automatisierung.md](prozesse/qualitaets-gates-automatisierung.md)** - Automatische Pflicht-Gates
+- **[prozesse/NEUE-ROUTINE-ERSTELLEN.md](prozesse/NEUE-ROUTINE-ERSTELLEN.md)** - Anleitung neue Routine
+- **[prozesse/REDUNDANZ-MANAGEMENT.md](prozesse/REDUNDANZ-MANAGEMENT.md)** - Redundanzen eliminieren
+- **[prozesse/REVIEW-PROZESS.md](prozesse/REVIEW-PROZESS.md)** - Review & Genehmigung
+- **[prozesse/ROUTINE-AKTUALISIEREN.md](prozesse/ROUTINE-AKTUALISIEREN.md)** - Bestehende Routine ändern
+- **[prozesse/QUALITAETS-GATES-AUTOMATISIERUNG.md](prozesse/QUALITAETS-GATES-AUTOMATISIERUNG.md)** - Automatische Pflicht-Gates
 
 ### 📐 Templates & Beispiele
 - **[templates/ROUTINE-TEMPLATE.md](templates/ROUTINE-TEMPLATE.md)** - Standard-Vorlage für alle Routinen
-- **[templates/beispiel-routine.md](templates/beispiel-routine.md)** - Dokumentiertes Beispiel
+- **[templates/BEISPIEL-ROUTINE.md](templates/BEISPIEL-ROUTINE.md)** - Dokumentiertes Beispiel
 
 ### 📚 Routinen nach Kategorie
 - **[routinen/kurzfristig/](routinen/kurzfristig/)** - Täglich/Wöchentlich
@@ -90,14 +93,14 @@ docs/handbuch/
 │
 ├── templates/                ← Vorlagen & Blueprints
 │   ├── ROUTINE-TEMPLATE.md   ← Standard-Template
-│   └── beispiel-routine.md   ← Dokumentiertes Beispiel
+│   └── BEISPIEL-ROUTINE.md   ← Dokumentiertes Beispiel
 │
 ├── prozesse/                 ← Governance & Prozesse
-│   ├── neue-routine-erstellen.md
-│   ├── routine-aktualisieren.md
-│   ├── redundanz-management.md
-│   ├── review-prozess.md
-│   └── qualitaets-gates-automatisierung.md
+│   ├── NEUE-ROUTINE-ERSTELLEN.md
+│   ├── ROUTINE-AKTUALISIEREN.md
+│   ├── REDUNDANZ-MANAGEMENT.md
+│   ├── REVIEW-PROZESS.md
+│   └── QUALITAETS-GATES-AUTOMATISIERUNG.md
 │
 └── marschplaene/             ← Planung & Tracking
     └── HAUPTMARSCHPLAN.md    ← Milestones & Todos
@@ -131,6 +134,12 @@ Jede Routine hat:
 - **Wartbar** - Leicht zu verstehen & zu ändern
 - **Erweiterbar** - Neue Routinen können einfach hinzugefügt werden
 
+### Dateinamensregel (verbindlich)
+
+- Alle Dokumentationsdateien mit Endung `.md` werden in GROSSBUCHSTABEN benannt.
+- Beispiel: `BEISPIEL-ROUTINE.md` statt `beispiel-routine.md`.
+- Neue Dokumente duerfen nur mit dieser Schreibweise angelegt werden.
+
 ---
 
 ## 🔄 Typische Workflows
@@ -138,7 +147,7 @@ Jede Routine hat:
 ### Workflow 1: Neue Routine erstellen
 
 ```
-1. Lese: prozesse/neue-routine-erstellen.md
+1. Lese: prozesse/NEUE-ROUTINE-ERSTELLEN.md
 2. Kopiere Template aus templates/
 3. Fülle Vorlage aus
 4. Check auf Redundanzen
@@ -148,12 +157,12 @@ Jede Routine hat:
 ```
 
 **Dauer:** ca. 2 Stunden  
-**Unterstützung:** See "neue-routine-erstellen.md"
+**Unterstützung:** See "NEUE-ROUTINE-ERSTELLEN.md"
 
 ### Workflow 2: Redundanz gefunden?
 
 ```
-1. Lese: prozesse/redundanz-management.md
+1. Lese: prozesse/REDUNDANZ-MANAGEMENT.md
 2. Analysiere Überlappung
 3. Entscheide: Löschen / Zusammenführen / Refaktorieren
 4. Führe Eliminierung durch
@@ -163,12 +172,12 @@ Jede Routine hat:
 ```
 
 **Dauer:** ca. 1-3 Stunden  
-**Unterstützung:** See "redundanz-management.md"
+**Unterstützung:** See "REDUNDANZ-MANAGEMENT.md"
 
 ### Workflow 3: Routine aktualisieren
 
 ```
-1. Lese: prozesse/routine-aktualisieren.md
+1. Lese: prozesse/ROUTINE-AKTUALISIEREN.md
 2. Öffne Feature Branch
 3. Mache Änderungen
 4. Update Versionsnummer & Changelog
@@ -178,7 +187,7 @@ Jede Routine hat:
 ```
 
 **Dauer:** ca. 1-2 Stunden  
-**Unterstützung:** See "routine-aktualisieren.md"
+**Unterstützung:** See "ROUTINE-AKTUALISIEREN.md"
 
 ---
 
@@ -238,22 +247,22 @@ Jede Routine hat:
 ## 🆘 Häufige Fragen
 
 ### F: Wie erstelle ich schnell eine neue Routine?
-**A:** Kopiere [templates/ROUTINE-TEMPLATE.md](templates/ROUTINE-TEMPLATE.md), fülle es aus, lese [prozesse/neue-routine-erstellen.md](prozesse/neue-routine-erstellen.md) durch.
+**A:** Kopiere [templates/ROUTINE-TEMPLATE.md](templates/ROUTINE-TEMPLATE.md), fülle es aus, lese [prozesse/NEUE-ROUTINE-ERSTELLEN.md](prozesse/NEUE-ROUTINE-ERSTELLEN.md) durch.
 
 ### F: Was ist eine Redundanz und wie behebe ich das?
-**A:** Wenn sich zwei Routinen stark ähneln. Lösung: [prozesse/redundanz-management.md](prozesse/redundanz-management.md)
+**A:** Wenn sich zwei Routinen stark ähneln. Lösung: [prozesse/REDUNDANZ-MANAGEMENT.md](prozesse/REDUNDANZ-MANAGEMENT.md)
 
 ### F: Ich bin unsicher, ob meine Routine gut dokumentiert ist?
-**A:** Review-Prozess nutzen! [prozesse/review-prozess.md](prozesse/review-prozess.md) - Andere schauen drüber.
+**A:** Review-Prozess nutzen! [prozesse/REVIEW-PROZESS.md](prozesse/REVIEW-PROZESS.md) - Andere schauen drüber.
 
 ### F: Darf ich bestehende Routinen löschen?
-**A:** Nein, archivieren. Siehe [prozesse/routine-aktualisieren.md](prozesse/routine-aktualisieren.md)
+**A:** Nein, archivieren. Siehe [prozesse/ROUTINE-AKTUALISIEREN.md](prozesse/ROUTINE-AKTUALISIEREN.md)
 
 ### F: Wie mache ich ein Update an einer Routine?
-**A:** Siehe [prozesse/routine-aktualisieren.md](prozesse/routine-aktualisieren.md)
+**A:** Siehe [prozesse/ROUTINE-AKTUALISIEREN.md](prozesse/ROUTINE-AKTUALISIEREN.md)
 
 ### F: Brauche ich für alles einen Review?
-**A:** Ja, alle neuen/geänderten Routinen. Siehe [prozesse/review-prozess.md](prozesse/review-prozess.md)
+**A:** Ja, alle neuen/geänderten Routinen. Siehe [prozesse/REVIEW-PROZESS.md](prozesse/REVIEW-PROZESS.md)
 
 ---
 
@@ -294,10 +303,10 @@ Folge diese Schritte, um loszulegen:
 - [ ] Lese [PFLICHTENHEFT.md](PFLICHTENHEFT.md)
 - [ ] Lese [ARCHITEKTUR.md](ARCHITEKTUR.md)
 - [ ] Schaue [marschplaene/HAUPTMARSCHPLAN.md](marschplaene/HAUPTMARSCHPLAN.md) für Phasen
-- [ ] Wenn neue Routine: Lies [prozesse/neue-routine-erstellen.md](prozesse/neue-routine-erstellen.md)
+- [ ] Wenn neue Routine: Lies [prozesse/NEUE-ROUTINE-ERSTELLEN.md](prozesse/NEUE-ROUTINE-ERSTELLEN.md)
 - [ ] Nutze [templates/ROUTINE-TEMPLATE.md](templates/ROUTINE-TEMPLATE.md) als Vorlage
-- [ ] Schaue [templates/beispiel-routine.md](templates/beispiel-routine.md) als Beispiel
-- [ ] Öffne PR & nutze [prozesse/review-prozess.md](prozesse/review-prozess.md)
+- [ ] Schaue [templates/BEISPIEL-ROUTINE.md](templates/BEISPIEL-ROUTINE.md) als Beispiel
+- [ ] Öffne PR & nutze [prozesse/REVIEW-PROZESS.md](prozesse/REVIEW-PROZESS.md)
 
 ---
 
@@ -310,14 +319,14 @@ Folge diese Schritte, um loszulegen:
 4. Lies ein Beispiel-Template
 
 **Fortgeschrittene (neue Routine)?**
-1. Öffne [prozesse/neue-routine-erstellen.md](prozesse/neue-routine-erstellen.md)
+1. Öffne [prozesse/NEUE-ROUTINE-ERSTELLEN.md](prozesse/NEUE-ROUTINE-ERSTELLEN.md)
 2. Kopiere [templates/ROUTINE-TEMPLATE.md](templates/ROUTINE-TEMPLATE.md)
 3. Fülle aus & öffne PR
-4. Lese [prozesse/review-prozess.md](prozesse/review-prozess.md) falls Feedback
+4. Lese [prozesse/REVIEW-PROZESS.md](prozesse/REVIEW-PROZESS.md) falls Feedback
 
 **Experte (System optimieren)?**
 1. Lese [ARCHITEKTUR.md](ARCHITEKTUR.md)
-2. Lese [prozesse/redundanz-management.md](prozesse/redundanz-management.md)
+2. Lese [prozesse/REDUNDANZ-MANAGEMENT.md](prozesse/REDUNDANZ-MANAGEMENT.md)
 3. Führe Audits durch
 4. Optimiere & refaktoriere
 

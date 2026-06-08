@@ -52,7 +52,7 @@ Eine vollständig dokumentierte, wartbare und erweiterbare Wissensdatenbank für
 | # | Todo | Status | Fällig | Aufwand |
 |----|----|-|----|-----|
 | 1.2.1 | ✅ routine-template.md erstellen | DONE | 24.03 | 1h |
-| 1.2.2 | ✅ beispiel-routine.md schreiben | DONE | 25.03 | 1h |
+| 1.2.2 | ✅ BEISPIEL-ROUTINE.md schreiben | DONE | 25.03 | 1h |
 | 1.2.3 | ⏳ Metadaten-Standard definieren | TODO | 25.03 | 30 Min |
 | 1.2.4 | ⏳ Naming-Konventionen festlegen | TODO | 25.03 | 30 Min |
 | 1.2.5 | ⏳ Validierungs-Checkliste erstellen | TODO | 26.03 | 45 Min |
@@ -70,10 +70,10 @@ Eine vollständig dokumentierte, wartbare und erweiterbare Wissensdatenbank für
 
 | # | Todo | Status | Fällig | Aufwand |
 |----|----|-|----|-----|
-| 1.3.1 | ✅ neue-routine-erstellen.md | DONE | 27.03 | 1h |
-| 1.3.2 | ✅ routine-aktualisieren.md | DONE | 27.03 | 45 Min |
-| 1.3.3 | ✅ redundanz-management.md | DONE | 28.03 | 1h |
-| 1.3.4 | ✅ review-prozess.md | DONE | 28.03 | 45 Min |
+| 1.3.1 | ✅ NEUE-ROUTINE-ERSTELLEN.md | DONE | 27.03 | 1h |
+| 1.3.2 | ✅ ROUTINE-AKTUALISIEREN.md | DONE | 27.03 | 45 Min |
+| 1.3.3 | ✅ REDUNDANZ-MANAGEMENT.md | DONE | 28.03 | 1h |
+| 1.3.4 | ✅ REVIEW-PROZESS.md | DONE | 28.03 | 45 Min |
 | 1.3.5 | ⏳ governance-richtlinien.md | TODO | 29.03 | 1h |
 
 **Ziel-Datum:** 29.03.2026  

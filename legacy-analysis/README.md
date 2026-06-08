@@ -2,6 +2,11 @@
 
 **Dieses Verzeichnis ist gesichert und wird NICHT ins Repository committed.**
 
+## Dokumentationskonvention
+
+Die zugehoerige Dokumentation folgt ebenfalls der Regel, dass Markdown-Dateien in GROSSBUCHSTABEN benannt werden.
+Neue Dateien fuer Analysen oder Anleitungen sollen diese Schreibweise verwenden.
+
 ## 📁 Zweck
 
 Dieses Verzeichnis dient zum Upload und zur Analyse von **Legacy-System Quellcode** als Ausgangssituation für:

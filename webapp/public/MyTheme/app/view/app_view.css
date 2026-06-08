@@ -1,0 +1,226 @@
+:root {
+    --bg: #f6f8fb;
+    --panel: #ffffff;
+    --line: #d8e0ea;
+    --brand: #006d77;
+    --brand-strong: #00545c;
+    --text: #1f2933;
+    --muted: #5c6b78;
+    --accent: #f59f00;
+    --danger: #b42318;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", "Noto Sans", "Helvetica Neue", sans-serif;
+    color: var(--text);
+    background: radial-gradient(circle at 0% 0%, #e3f7f9 0%, var(--bg) 45%);
+}
+
+.app-shell {
+    max-width: 1080px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.app-nav {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 1rem;
+    position: sticky;
+    top: 1rem;
+    height: fit-content;
+}
+
+.brand {
+    margin-bottom: 1rem;
+}
+
+.brand h1 {
+    margin: 0;
+    font-size: 1.15rem;
+}
+
+.brand p {
+    margin: 0.25rem 0 0;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.menu-toggle {
+    display: none;
+    border: 1px solid var(--brand);
+    color: var(--brand);
+    background: transparent;
+    border-radius: 10px;
+    padding: 0.45rem 0.75rem;
+    width: 100%;
+}
+
+.menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.35rem;
+}
+
+.menu-list a {
+    display: block;
+    text-decoration: none;
+    color: var(--text);
+    padding: 0.55rem 0.65rem;
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
+
+.menu-list a:hover,
+.menu-list a.active {
+    border-color: var(--line);
+    background: #eef6f7;
+    color: var(--brand-strong);
+}
+
+.app-main {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 1rem;
+}
+
+.badges {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.85rem;
+}
+
+.badge {
+    background: #eef4f8;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 0.2rem 0.65rem;
+    font-size: 0.8rem;
+    color: var(--muted);
+}
+
+.engine-switch {
+    margin: 0.85rem 0;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.engine-switch label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.85rem;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.form-field.is-hidden {
+    display: none;
+}
+
+.field-help {
+    color: var(--muted);
+    font-size: 0.8rem;
+}
+
+.form-field.full {
+    grid-column: 1 / -1;
+}
+
+input,
+select,
+button {
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 0.55rem 0.65rem;
+    font: inherit;
+}
+
+button[type="submit"] {
+    background: var(--brand);
+    color: #fff;
+    border-color: var(--brand);
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background: var(--brand-strong);
+}
+
+.result,
+.error-box {
+    margin-top: 1rem;
+    border-radius: 10px;
+    padding: 0.85rem;
+}
+
+.result {
+    border: 1px solid #b7d5db;
+    background: #f3fbfc;
+}
+
+.error-box {
+    border: 1px solid #f6c7c2;
+    background: #fff2f0;
+    color: var(--danger);
+}
+
+.result table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.result th,
+.result td {
+    text-align: left;
+    border-bottom: 1px solid #d8ecef;
+    padding: 0.45rem 0;
+    vertical-align: top;
+}
+
+@media (max-width: 860px) {
+    .app-shell {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    .menu-list {
+        display: none;
+    }
+
+    .menu-list.open {
+        display: grid;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+}

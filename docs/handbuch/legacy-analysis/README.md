@@ -9,16 +9,16 @@ Dieses Verzeichnis enthält die **Analyseergebnisse** von Legacy-System-Code. Di
 ```
 legacy-analysis/
 ├── README.md                     # Dieses Dokument
-├── 01-systemübersicht.md        # Übersicht des Legacy-Systems
-├── 02-architektur-analyse.md    # Architektur-Analyse
-├── 03-codequalität-audit.md     # Code-Qualität & Probleme
-├── 04-sicherheits-audit.md      # Sicherheitsprobleme
-├── 05-migrationsplan.md         # Plan für Migration
-├── 06-schätzungen.md            # Zeit- & Ressourcenschätzungen
-└── 99-diagramme/                # PlantUML/Mermaid Diagramme
-    ├── architektur.md
-    ├── datenfluss.md
-    └── abhängigkeiten.md
+├── 01-SYSTEMUEBERSICHT.md        # Uebersicht des Legacy-Systems
+├── 02-ARCHITEKTUR-ANALYSE.md     # Architektur-Analyse
+├── 03-CODEQUALITAET-AUDIT.md     # Code-Qualitaet & Probleme
+├── 04-SICHERHEITS-AUDIT.md       # Sicherheitsprobleme
+├── 05-MIGRATIONSPLAN.md          # Plan fuer Migration
+├── 06-SCHAETZUNGEN.md            # Zeit- & Ressourcenschaetzungen
+└── 99-DIAGRAMME/                 # PlantUML/Mermaid Diagramme
+    ├── ARCHITEKTUR.md
+    ├── DATENFLUSS.md
+    └── ABHAENGIGKEITEN.md
 ```
 
 ## 📝 Wie man eine Analyse dokumentiert
@@ -74,7 +74,7 @@ git commit -m "Legacy Analysis: [Thema]"
 
 ## 🔗 Verwandte Ressourcen
 
-- Quellcode-Upload: [`/legacy-analysis/README.md`](../../legacy-analysis/README.md)
+- Quellcode-Upload: [`/legacy-analysis/README.md`](../../../legacy-analysis/README.md)
 - Migrationshandbuch: (noch zu erstellen)
 - Refactoring-Guide: (noch zu erstellen)
 

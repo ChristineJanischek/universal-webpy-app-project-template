@@ -73,7 +73,7 @@ Was ist das Ergebnis dieser Routine?
 
 **Verwaltung:**
 - Master-Template in `templates/routine-template.md`
-- Beispiel-Implementierung in `templates/beispiel-routine.md`
+- Beispiel-Implementierung in `templates/BEISPIEL-ROUTINE.md`
 - Spezialvorlagen für unterschiedliche Routine-Typen (Code, Prozess, Analyse)
 
 ### 2.3 Kategorisierung nach Zeithorizont

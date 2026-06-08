@@ -13,21 +13,24 @@
 1. **[PFLICHTENHEFT.md](PFLICHTENHEFT.md)** - Anforderungen, Ziele, Umfang
 2. **[ARCHITEKTUR.md](ARCHITEKTUR.md)** - System-Design, Komponenten, Datenfluss
 3. **[MARSCHPLAN.md](marschplaene/HAUPTMARSCHPLAN.md)** - Phasen, Milestones, Zeitplan
-4. **[marschplaene/MARSCHLPLAN_PyApp.md](marschplaene/MARSCHLPLAN_PyApp.md)** - Umsetzungsplan fuer die Webapp des VolleyballspielerManagers
+4. **[marschplaene/MARSCHLPLAN_PYAPP.md](marschplaene/MARSCHLPLAN_PYAPP.md)** - Umsetzungsplan fuer die Webapp des VolleyballspielerManagers
 
 ### 🧪 Anleitungen & Live-Tests
-- **[anleitungen/java-live-test.md](anleitungen/java-live-test.md)** - Java-App kompilieren, Modell-Tests & GUI starten
+- **[anleitungen/JAVA-LIVE-TEST.md](anleitungen/JAVA-LIVE-TEST.md)** - Java-App kompilieren, Modell-Tests & GUI starten
+- **[anleitungen/MYTHEME-MVC-ERWEITERUNG.md](anleitungen/MYTHEME-MVC-ERWEITERUNG.md)** - Schritt-fuer-Schritt zur Erweiterung der MyTheme MVC-Webapp
+- **[anleitungen/GETRAENKEAUTOMAT-PHP-SCHRITT-FUER-SCHRITT.md](anleitungen/GETRAENKEAUTOMAT-PHP-SCHRITT-FUER-SCHRITT.md)** - Schuelerleitfaden fuer einen Getraenkeautomaten mit PHP
+- **[anleitungen/GETRAENKEAUTOMAT-PYTHON-SCHRITT-FUER-SCHRITT.md](anleitungen/GETRAENKEAUTOMAT-PYTHON-SCHRITT-FUER-SCHRITT.md)** - Schuelerleitfaden fuer einen Getraenkeautomaten mit Python
 
 ### 🔧 Prozesse & Governance
-- **[prozesse/neue-routine-erstellen.md](prozesse/neue-routine-erstellen.md)** - Schritt-für-Schritt Anleitung
-- **[prozesse/routine-aktualisieren.md](prozesse/routine-aktualisieren.md)** - Update & Wartung
-- **[prozesse/redundanz-management.md](prozesse/redundanz-management.md)** - Redundanzen finden & beheben
-- **[prozesse/review-prozess.md](prozesse/review-prozess.md)** - Quality Assurance
-- **[prozesse/qualitaets-gates-automatisierung.md](prozesse/qualitaets-gates-automatisierung.md)** - Automatische Pflicht-Gates
+- **[prozesse/NEUE-ROUTINE-ERSTELLEN.md](prozesse/NEUE-ROUTINE-ERSTELLEN.md)** - Schritt-für-Schritt Anleitung
+- **[prozesse/ROUTINE-AKTUALISIEREN.md](prozesse/ROUTINE-AKTUALISIEREN.md)** - Update & Wartung
+- **[prozesse/REDUNDANZ-MANAGEMENT.md](prozesse/REDUNDANZ-MANAGEMENT.md)** - Redundanzen finden & beheben
+- **[prozesse/REVIEW-PROZESS.md](prozesse/REVIEW-PROZESS.md)** - Quality Assurance
+- **[prozesse/QUALITAETS-GATES-AUTOMATISIERUNG.md](prozesse/QUALITAETS-GATES-AUTOMATISIERUNG.md)** - Automatische Pflicht-Gates
 
 ### 📐 Templates & Beispiele
 - **[templates/ROUTINE-TEMPLATE.md](templates/ROUTINE-TEMPLATE.md)** - Standard-Vorlage (MUSS gedacht werden!)
-- **[templates/beispiel-routine.md](templates/beispiel-routine.md)** - Dokumentiertes Beispiel
+- **[templates/BEISPIEL-ROUTINE.md](templates/BEISPIEL-ROUTINE.md)** - Dokumentiertes Beispiel
 
 ### 📚 Routinen-Katalog
 - **[routinen/kurzfristig/](routinen/kurzfristig/)** - Täglich/Wöchentlich (Kurzzeitaufgaben)
@@ -38,23 +41,23 @@
 
 ## 🎯 Ich möchte...
 
-### ...eine neue Routine erstellen → [prozesse/neue-routine-erstellen.md](prozesse/neue-routine-erstellen.md)
+### ...eine neue Routine erstellen → [prozesse/NEUE-ROUTINE-ERSTELLEN.md](prozesse/NEUE-ROUTINE-ERSTELLEN.md)
 1. Lese das Prozess-Dokument (15 Min)
 2. Kopiere [templates/ROUTINE-TEMPLATE.md](templates/ROUTINE-TEMPLATE.md)
-3. Schau [templates/beispiel-routine.md](templates/beispiel-routine.md) für Beispiele
+3. Schau [templates/BEISPIEL-ROUTINE.md](templates/BEISPIEL-ROUTINE.md) für Beispiele
 4. Öffne PR zum Review
 
-### ...eine Routine aktualisieren → [prozesse/routine-aktualisieren.md](prozesse/routine-aktualisieren.md)
+### ...eine Routine aktualisieren → [prozesse/ROUTINE-AKTUALISIEREN.md](prozesse/ROUTINE-AKTUALISIEREN.md)
 1. Entscheide: Minor oder Major Update?
 2. Folge die entsprechenden Schritte
 3. Update Versionsnummer & Changelog
 
-### ...Redundanzen finden → [prozesse/redundanz-management.md](prozesse/redundanz-management.md)
+### ...Redundanzen finden → [prozesse/REDUNDANZ-MANAGEMENT.md](prozesse/REDUNDANZ-MANAGEMENT.md)
 1. Nutze die Erkennungs-Strategien
 2. Erstelle Vergleichs-Matrix
 3. Elimination/Zusammenführung durchführen
 
-### ...einen Review durchführen → [prozesse/review-prozess.md](prozesse/review-prozess.md)
+### ...einen Review durchführen → [prozesse/REVIEW-PROZESS.md](prozesse/REVIEW-PROZESS.md)
 1. Nutze die Quality-Checkliste
 2. Gebe konstruktives Feedback
 3. Approver oder Reject (mit Begründung)
@@ -69,7 +72,7 @@
 - Todos & Meilestones
 - Aufwandschätzung
 
-### ...die Webapp mit Volleyball-Manager umsetzen → [marschplaene/MARSCHLPLAN_PyApp.md](marschplaene/MARSCHLPLAN_PyApp.md)
+### ...die Webapp mit Volleyball-Manager umsetzen → [marschplaene/MARSCHLPLAN_PYAPP.md](marschplaene/MARSCHLPLAN_PYAPP.md)
 - Zielbild fuer Theme, Navigation und Formulare
 - Schrittfolge fuer Refactoring, API und Frontend
 - Risiken und erster sinnvoller Meilenstein
@@ -98,14 +101,14 @@ handbuch/
 │
 ├── templates/                     ← Vorlagen & Blueprints
 │   ├── ROUTINE-TEMPLATE.md        ← Standard-Template (MUSS nutzen!)
-│   └── beispiel-routine.md        ← Dokumentiertes Beispiel
+│   └── BEISPIEL-ROUTINE.md        ← Dokumentiertes Beispiel
 │
 ├── prozesse/                      ← Prozess & Governance
-│   ├── neue-routine-erstellen.md
-│   ├── routine-aktualisieren.md
-│   ├── redundanz-management.md
-│   ├── review-prozess.md
-│   └── qualitaets-gates-automatisierung.md
+│   ├── NEUE-ROUTINE-ERSTELLEN.md
+│   ├── ROUTINE-AKTUALISIEREN.md
+│   ├── REDUNDANZ-MANAGEMENT.md
+│   ├── REVIEW-PROZESS.md
+│   └── QUALITAETS-GATES-AUTOMATISIERUNG.md
 │
 └── marschplaene/                  ← Planung & Tracking
     ├── HAUPTMARSCHPLAN.md         ← Master-Marschplan
@@ -120,7 +123,7 @@ handbuch/
 
 ### Workflow #1: Neue Routine hinzufügen (2h)
 ```
-1. Lese prozesse/neue-routine-erstellen.md (30 Min)
+1. Lese prozesse/NEUE-ROUTINE-ERSTELLEN.md (30 Min)
 2. Kopiere templates/ROUTINE-TEMPLATE.md (5 Min)
 3. Schreib Routine aus (45 Min)
 4. Selbst-Review & Validierung (20 Min)
@@ -131,7 +134,7 @@ handbuch/
 
 ### Workflow #2: Redundanz eliminieren (1-3h)
 ```
-1. Lese prozesse/redundanz-management.md (20 Min)
+1. Lese prozesse/REDUNDANZ-MANAGEMENT.md (20 Min)
 2. Identifiziere ähnliche Routinen (30 Min)
 3. Erstelle Vergleichs-Matrix (20 Min)
 4. Entscheide: Löschen/Merge/Refactor (30 Min)
@@ -142,7 +145,7 @@ handbuch/
 
 ### Workflow #3: Update durchführen (15 Min - 2h)
 ```
-1. Lese prozesse/routine-aktualisieren.md (10 Min)
+1. Lese prozesse/ROUTINE-AKTUALISIEREN.md (10 Min)
 2. Entscheide: Minor oder Major Update
 3. Mache Änderungen (5 Min - 1h)
 4. Update Versionsnummer & Changelog (5 Min)
@@ -159,12 +162,12 @@ handbuch/
 1. Lese README.md (5 Min)
 2. Lese PFLICHTENHEFT.md (15 Min)
 3. Lese ARCHITEKTUR.md (20 Min)
-4. Schaue dir beispiel-routine.md an (10 Min)
+4. Schaue dir BEISPIEL-ROUTINE.md an (10 Min)
 5. Teste: Erstelle deine erste Routine (1h)
 
 ### 👨‍💼 Fortgeschrittener (Neue Routine)
 **Ziel:** Routine dokumentieren (2-3 Stunden)
-1. Lese prozesse/neue-routine-erstellen.md (30 Min)
+1. Lese prozesse/NEUE-ROUTINE-ERSTELLEN.md (30 Min)
 2. Kopiere ROUTINE-TEMPLATE.md (5 Min)
 3. Schreibe deine Routine (45 Min - 1h)
 4. Selbst-Review (15 Min)
@@ -224,13 +227,13 @@ handbuch/
 A: [README.md](README.md) lesen (5 Min Quick-Start)
 
 **Q: Wie erstelle ich eine neue Routine?**  
-A: [prozesse/neue-routine-erstellen.md](prozesse/neue-routine-erstellen.md)
+A: [prozesse/NEUE-ROUTINE-ERSTELLEN.md](prozesse/NEUE-ROUTINE-ERSTELLEN.md)
 
 **Q: Was ist eine Redundanz?**  
-A: Wenn zwei Routinen zu ähnlich sind. Lösung: [prozesse/redundanz-management.md](prozesse/redundanz-management.md)
+A: Wenn zwei Routinen zu ähnlich sind. Lösung: [prozesse/REDUNDANZ-MANAGEMENT.md](prozesse/REDUNDANZ-MANAGEMENT.md)
 
 **Q: Darf ich alte Routinen löschen?**  
-A: Nein! Archivieren statt löschen. Siehe [prozesse/routine-aktualisieren.md](prozesse/routine-aktualisieren.md)
+A: Nein! Archivieren statt löschen. Siehe [prozesse/ROUTINE-AKTUALISIEREN.md](prozesse/ROUTINE-AKTUALISIEREN.md)
 
 **Q: Wie ist der Zeitplan?**  
 A: [marschplaene/HAUPTMARSCHPLAN.md](marschplaene/HAUPTMARSCHPLAN.md)

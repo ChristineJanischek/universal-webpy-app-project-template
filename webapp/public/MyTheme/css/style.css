@@ -1,0 +1,159 @@
+/*
+Theme Name: MyTheme
+Theme URI: URL, wo es Informationen zum Theme gibt
+Description: eine kurze Beschreibung 
+Author: Name des Autors (Euer Name)
+Author URI: URL des Autors
+Template: Sollte das Theme auf einem anderen basieren, 
+dann k�nn Sie das hier vermerken - optional
+Version: 1.0 (f�r die erste Version)
+
+*/
+body {
+	color: #000075; /*Schriftfarbe: Hexadezimalangabe*/
+	background-color: white; /*Hintergrundfarbe*/
+	font-family: Verdana, Arial, Helvetica, sans-serif; /*Schriftart*/
+	font-size: 100, 01%; /*relative Schriftgr��e*/
+}
+
+div {
+	margin: 1%; /*Aussenabstand: relativ 1% von allen Seiten*/
+}
+
+#wrapper {
+	display: block; /*Block Element*/
+	border: 5px solid black; /*Rahmen 5 Pixel breit durchgehend schwarz*/
+	width: 90%; /*Breite der Box: relativ 90%*/
+}
+
+/*Kopfzeile*/
+
+#header {
+	border: 1px solid white;/*Rahmen 1 Pixel breit durchgehend gr�n*/
+}
+
+#header #logo {
+	float: left; /*Ausrichtung des Elements links*/
+	width: 175px; /*Breite der Box: in Pixel*/
+	height : 42px;/*H�he der Box: in Pixel*/
+	background: url(../images/logo_final.png); /*logo einbinden*/
+	background-repeat: no-repeat; /*Verhindert die Wiederholung der Grafik*/
+}
+
+/*Inhalt*/
+
+#content {
+	border: 0px solid red;/*Rahmen 1 Pixel breit durchgehend rot*/
+	float: right;/*Ausrichtung des Elements rechts*/
+	width: 65%;/*Breite der Box: in %*/
+	height: auto;/*Automatische Regulierung der H�he*/
+}
+
+#content p {
+	text-align: center;/*Textausrichtung innerhalb der Box zentriert*/
+}
+
+/*Formular, Komponenten*/
+
+fieldset h5{
+	color: #8c2b2b;/*Schriftfarbe: Hexadezimalangabe*/
+	font-weight: normal;
+	margin-top: 5px;/*Aussenabstand in Kurzform 20 Pixel von rechts*/
+	border: 0px solid #8c2b2b;/*Rahmen 1 Pixel breit durchgehend rot*/
+}
+
+fieldset {
+	display: block; /*Inline-Elemente werden zu Blockelemente*/
+	margin-right: 20px;/*Aussenabstand in Kurzform 20 Pixel von rechts*/
+	margin-left: 20px;/*Aussenabstand in Kurzform 20 Pixel von links*/
+	font-size: 85%;/*relative Schriftgr��e*/
+	padding: 5px;/*Innenabstand: Kurzform von allen Seiten*/ 
+	border: 1px solid #8c2b2b;/*Rahmen 1 Pixel breit durchgehend rot*/
+}
+
+fieldset #left{
+	clear:left;
+	float: left;
+	width: 40%;
+	border: 0px solid #8c2b2b;/*Rahmen keiner*/
+}
+
+fieldset #right{
+	float: right;
+	width: 40%;
+	border: 0px solid #8c2b2b;/*Rahmen keiner*/
+}
+
+legend,input,button,submit {
+
+	color: #8c2b2b;/*Schriftfarbe: Hexadezimalangabe*/
+	font-size: 90%;/*relative Schriftgr��e*/	
+	margin-left: 5px;
+}
+
+legend{
+	margin-top: 0;/*Aussenabstand in Kurzform 5 Pixel von oben*/
+	margin-bottom: 0;/*Aussenabstand in Kurzform 5 Pixel von oben*/
+}
+
+input{
+	float: left;
+	margin-top: 0;/*Aussenabstand in Kurzform 0 Pixel von oben*/
+	background-color: rgba(220, 220, 220, 0.9);/*Hintergrundfarbe: RGB-Angabe*/
+}
+
+/*Navigation*/
+
+#sidebar {
+	margin: 0; /*Regulierung des Innenabstand*/
+	padding: 0; /*Regulierung des Au�enabstand*/
+	margin-top: 10px;/*Aussenabstand in Kurzform 20 Pixel von oben*/
+	*margin-bottom: 10px;/*Aussenabstand in Kurzform 10 Pixel von unten*/
+	margin-left: 10px;/*Aussenabstand in Kurzform 10 Pixel von links*/
+	float: left;/*Ausrichtung des Elements links*/
+	width: 30%;/*Breite der Box: in %*/
+	border: 0px solid yellow; /*durchgehend, gr�n*/
+}
+
+#sidebar ul {
+	list-style-type: none; /*Gliederungsform*/
+	margin: 0; /*Regulierung des Innenabstand*/
+	padding: 0; /*Regulierung des Au�enabstand*/
+}
+
+#sidebar li {
+	margin: 0 0 1px 0;/*Regulierung des Au�enabstand: oben - rechts - unten - links*/
+	*margin: 0 0 -5px 0;/*Regulierung des Au�enabstand: oben - rechts - unten - links*/
+	padding: 0; /*Regulierung des Au�enabstand*/
+}
+
+#sidebar li a:link,#sidebar li a:visited {
+	display: block; /*Inline-Elemente werden zu Blockelemente*/
+	text-decoration: none; /*Linkform*/
+	font-weight: bold; /*Schriftform*/
+	padding: 5px 5px 5px 0.5em; /*Au�enabstand*/
+	border-left: 12px solid #0972b4;/*breiter Rahmen links, Linienstil, Rahmenfarbe*/	
+	background-color: #bbbfc2; /*Hintergrundfarbe der Navi*/
+	color: #F3F8EF;/*Schriftfarbe der Navi f�r normale und besuchte Links*/
+	
+}
+
+/*CSS-Hack f�r den IE9*/
+* html #sidebar li a {
+	margin: 0 0 -18px 0px \0/IE9;/*Regulierung des Au�enabstand: oben - rechts - unten - links*/
+}
+
+#sidebar li a:hover,#sidebar li a:active,#li a:focus {
+	border-left: 12px solid #bbbfc2;/*breiter Rahmen links, Linienstil, Rahmenfarbe >> bei Rollover*/	
+	background-color: #0972b4; /*Hintergrundfarbe der Navi bei Rollover*/
+	color: #F3F8EF;/*Schriftfarbe der Navi f�r den Rollover-Effekt (Maus-Effekt)*/
+	
+}
+
+/*Fusszeile*/
+
+#footer {
+	clear: both;/*Beendet das Umflie�en von Elementen*/
+	height: 33px;/*H�he der Box: in Pixel*/
+	border: 0px solid blue;
+}

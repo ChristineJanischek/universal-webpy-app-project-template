@@ -55,6 +55,12 @@ Data Layer (MySQL - Persistent Storage)
 
 ## 📚 Dokumentation
 
+### Dokumentationskonvention
+
+- Alle Markdown-Dateien im Handbuch und in den weiteren Doku-Bereichen werden in GROSSBUCHSTABEN benannt.
+- Das gilt auch fuer die Einstiegspunkte in [webapp/](webapp/README.md) und [legacy-analysis/](legacy-analysis/README.md).
+- Neue Dokumente sollen direkt mit dieser Schreibweise angelegt werden.
+
 ### Wichtige Dokumente
 
 | Dokument | Beschreibung |
@@ -63,6 +69,8 @@ Data Layer (MySQL - Persistent Storage)
 | [ARCHITEKTUR.md](docs/handbuch/ARCHITEKTUR.md) | Technische Architektur & Diagramme |
 | [Handbuch Index](docs/handbuch/INDEX.md) | Übersicht aller Dokumentationen |
 | [README.md](docs/handbuch/README.md) | Quick-Start & Übersicht |
+| [Getraenkeautomat PHP](docs/handbuch/anleitungen/GETRAENKEAUTOMAT-PHP-SCHRITT-FUER-SCHRITT.md) | Schueler-Anleitung: Automaten-Erweiterung mit PHP |
+| [Getraenkeautomat Python](docs/handbuch/anleitungen/GETRAENKEAUTOMAT-PYTHON-SCHRITT-FUER-SCHRITT.md) | Schueler-Anleitung: Automaten-Erweiterung mit Python |
 | [legacy-analysis/README.md](legacy-analysis/README.md) | 🔒 **Legacy-Code Analyse** (Upload & Analyse) |
 
 ---

@@ -502,7 +502,7 @@ bash scripts/start-services.sh
 ---
 
 **Kontakt & Support:**  
-Für Fragen zur Wissensdatenbank: Siehe MARSCHPLAN.md und prozesse/neue-routine-erstellen.md
+Für Fragen zur Wissensdatenbank: Siehe MARSCHPLAN.md und prozesse/NEUE-ROUTINE-ERSTELLEN.md
 
 **Version History:**
 - v1.0 (23.03.2026): Initiales Pflichtenheft erstellt
