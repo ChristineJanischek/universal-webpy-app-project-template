@@ -39,7 +39,7 @@ if ($current === null) {
         <ul class="menu-list" id="menuList">
             <?php foreach ($schema as $slug => $meta): ?>
                 <li>
-                    <a href="app_controler.php?tool=<?= esc_view((string) $slug) ?>" class="<?= $slug === $tool ? 'active' : '' ?>">
+                    <a href="app_controller.php?tool=<?= esc_view((string) $slug) ?>" class="<?= $slug === $tool ? 'active' : '' ?>">
                         <?= esc_view((string) $meta['title']) ?>
                     </a>
                 </li>
@@ -56,7 +56,7 @@ if ($current === null) {
         <h2><?= esc_view((string) $current['title']) ?></h2>
         <p><?= esc_view((string) $current['description']) ?></p>
 
-        <form method="post" action="app_controler.php?tool=<?= esc_view($tool) ?>">
+        <form method="post" action="app_controller.php?tool=<?= esc_view($tool) ?>">
             <input type="hidden" name="tool" value="<?= esc_view($tool) ?>">
 
             <div class="engine-switch">

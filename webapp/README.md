@@ -14,7 +14,8 @@ Die Webapp zeigt Rechner und Automaten in einer gemeinsamen, mobilen MVC-Struktu
 Schueler lernen dabei die Trennung von:
 
 - View (Oberflaeche)
-- Controler (Ablaufsteuerung)
+- Routes (oeffentliche Einstiegspunkte)
+- Controller (interne Ablaufsteuerung)
 - Modell (Fachlogik)
 
 ## Verzeichnisuebersicht
@@ -24,10 +25,11 @@ webapp/
 |- Dockerfile
 |- public/
    |- MyTheme/
-      |- app_controler.php
-      |- controler/                 # Einstiegspunkte pro Tool
+      |- app_controller.php
+      |- routes/                    # Einstiegspunkte pro Tool
+      |- controler/                 # Legacy-Redirects fuer alte Links
       |- app/
-      |  |- controler/              # zentrale Ablaufsteuerung
+      |  |- controller/             # zentrale Ablaufsteuerung
       |  |- modell/                 # PHP-Logik + Python-Bridge
       |  |- view/                   # HTML/CSS der App
       |- phpApp/                    # PHP-Auswertung
@@ -63,7 +65,7 @@ bash scripts/test-services.sh
 - Python: `public/MyTheme/pyApp/FormEvaluator.py`
 
 3. Einstieg pruefen:
-- `public/MyTheme/controler/<tool>_controler.php`
+- `public/MyTheme/routes/<tool>_controller.php`
 
 4. Im Browser testen (Engine PHP oder Python waehlen).
 

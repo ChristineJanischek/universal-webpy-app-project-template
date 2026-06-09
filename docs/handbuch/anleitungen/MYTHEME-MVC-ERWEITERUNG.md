@@ -4,7 +4,8 @@
 
 Alle vorhandenen Rechner und Automaten aus MyTheme laufen in einer gemeinsamen, mobilen Webapp mit klaren Rollen:
 
-- Dateien mit Zusatz controler: steuern den Ablauf
+- Dateien im Ordner routes: oeffentliche Einstiegspfade pro Tool
+- Dateien im Ordner app/controller: interne Ablaufsteuerung
 - Dateien mit Zusatz view: zeigen die Oberflaeche
 - Dateien mit Zusatz modell: enthalten die Fachlogik
 
@@ -14,23 +15,25 @@ So bleibt das Projekt uebersichtlich, wiederverwendbar und leicht erweiterbar.
 
 ```text
 webapp/public/MyTheme/
-|- app_controler.php
+|- app_controller.php
+|- routes/
+|  |- bmi_controller.php
+|  |- noten_controller.php
+|  |- taschenrechner_controller.php
+|  |- rabatt_controller.php
+|  |- milchautomat_controller.php
+|  |- getraenkeautomat_controller.php
+|  |- urlaub_controller.php
+|  |- umsatz_controller.php
+|  |- volleyball_controller.php
 |- controler/
-|  |- bmi_controler.php
-|  |- noten_controler.php
-|  |- taschenrechner_controler.php
-|  |- rabatt_controler.php
-|  |- milchautomat_controler.php
-|  |- getraenkeautomat_controler.php
-|  |- urlaub_controler.php
-|  |- umsatz_controler.php
-|  |- volleyball_controler.php
+|  |- *_controler.php (Legacy-Redirects)
 |- legacy/
 |  |- README.md
 |  |- tools/
 |- app/
-|  |- controler/
-|  |  |- tools_controler.php
+|  |- controller/
+|  |  |- tools_controller.php
 |  |- modell/
 |  |  |- form_schema_modell.php
 |  |  |- php_engine_modell.php
@@ -40,7 +43,6 @@ webapp/public/MyTheme/
 |     |- app_view.css
 |- phpApp/
 |  |- FormEvaluator.php
-|  |- VolleyballManager.php
 |- pyApp/
 |  |- FormEvaluator.py
 ```
@@ -52,21 +54,21 @@ Die alten Root-Dateien wurden entfernt, damit nur noch die neue Controller-Struk
 
 Beispiel-Mapping:
 
-- controler/bmi_controler.php -> app_controler.php?tool=bmi
-- controler/noten_controler.php -> app_controler.php?tool=noten
-- controler/taschenrechner_controler.php -> app_controler.php?tool=taschenrechner
-- controler/rabatt_controler.php -> app_controler.php?tool=rabatt
-- controler/milchautomat_controler.php -> app_controler.php?tool=milchautomat
-- controler/getraenkeautomat_controler.php -> app_controler.php?tool=getraenkeautomat
-- controler/urlaub_controler.php -> app_controler.php?tool=urlaub
-- controler/umsatz_controler.php -> app_controler.php?tool=umsatz
-- controler/volleyball_controler.php -> app_controler.php?tool=volleyball
+- routes/bmi_controller.php -> app_controller.php?tool=bmi
+- routes/noten_controller.php -> app_controller.php?tool=noten
+- routes/taschenrechner_controller.php -> app_controller.php?tool=taschenrechner
+- routes/rabatt_controller.php -> app_controller.php?tool=rabatt
+- routes/milchautomat_controller.php -> app_controller.php?tool=milchautomat
+- routes/getraenkeautomat_controller.php -> app_controller.php?tool=getraenkeautomat
+- routes/urlaub_controller.php -> app_controller.php?tool=urlaub
+- routes/umsatz_controller.php -> app_controller.php?tool=umsatz
+- routes/volleyball_controller.php -> app_controller.php?tool=volleyball
 
 Spezielle Klarstellung Volleyball:
 
 - legacy/tools/volleyball_form_view_legacy.php = alte Formularsicht
 - legacy/tools/volleyball_modell_legacy.php = alte funktionale Logik
-- controler/volleyball_controler.php = neuer klarer Einstiegspunkt in die MVC-App
+- routes/volleyball_controller.php = neuer klarer Einstiegspunkt in die MVC-App
 
 Didaktischer Vorteil:
 
@@ -76,8 +78,8 @@ Didaktischer Vorteil:
 
 ## Was wurde didaktisch verbessert?
 
-1. Ein klarer Einstiegspunkt pro Tool mit *_controler.php.
-2. Einheitliche Benennung nach controler/view/modell.
+1. Ein klarer Einstiegspunkt pro Tool mit *_controller.php.
+2. Einheitliche Benennung nach routes/controller/view/modell.
 3. Keine doppelte Formularlogik pro Rechner.
 4. Auswertung per PHP oder Python umschaltbar.
 5. Mobile Bedienung mit einfachem Toggle-Menue.

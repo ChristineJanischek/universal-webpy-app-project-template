@@ -65,14 +65,14 @@ Wenn du nur Python willst, teste im UI mit Engine = Python.
 
 ## Schritt 4: Test in der App
 
-1. Browser: http://localhost:8080/MyTheme/app_controler.php
+1. Browser: http://localhost:8080/MyTheme/app_controller.php
 2. Tool getraenkeautomat waehlen.
 3. Engine auf Python stellen.
 4. Form ausfuellen und Ergebnis pruefen.
 
 Direkter Einstieg:
 
-- http://localhost:8080/MyTheme/controler/getraenkeautomat_controler.php
+- http://localhost:8080/MyTheme/routes/getraenkeautomat_controller.php
 
 ## Schritt 5: Python-Auswertung direkt testen
 
@@ -90,7 +90,7 @@ Wenn ihr einen VNC-Desktop im Unterricht nutzt:
 
 1. VNC-Desktop oeffnen.
 2. Browser im VNC nutzen.
-3. URL oeffnen: http://localhost:8080/MyTheme/app_controler.php
+3. URL oeffnen: http://localhost:8080/MyTheme/app_controller.php
 4. Tool mit Engine Python durchtesten.
 
 ## Schritt 7: Projektvalidierung

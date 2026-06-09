@@ -6,7 +6,7 @@ require_once __DIR__ . '/../modell/form_schema_modell.php';
 require_once __DIR__ . '/../modell/php_engine_modell.php';
 require_once __DIR__ . '/../modell/python_bridge_modell.php';
 
-function sanitize_input_controler(array $raw): array
+function sanitize_input_controller(array $raw): array
 {
     $result = [];
     foreach ($raw as $key => $value) {
@@ -18,7 +18,7 @@ function sanitize_input_controler(array $raw): array
     return $result;
 }
 
-function run_tool_controler(string $tool, array $input, string $engine): array
+function run_tool_controller(string $tool, array $input, string $engine): array
 {
     $schema = get_tool_schema_modell();
     if (!isset($schema[$tool])) {
@@ -40,4 +40,15 @@ function run_tool_controler(string $tool, array $input, string $engine): array
     }
 
     return $result;
+}
+
+// Backward-compatible aliases for older includes.
+function sanitize_input_controler(array $raw): array
+{
+    return sanitize_input_controller($raw);
+}
+
+function run_tool_controler(string $tool, array $input, string $engine): array
+{
+    return run_tool_controller($tool, $input, $engine);
 }

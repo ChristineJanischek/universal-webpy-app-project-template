@@ -1,5 +1,5 @@
 ﻿<?php
 declare(strict_types=1);
 
-header('Location: controler/bmi_controler.php');
+header('Location: routes/bmi_controller.php');
 exit;

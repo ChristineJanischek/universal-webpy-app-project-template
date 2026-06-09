@@ -62,14 +62,14 @@ Rueckgabeformat wie bei den anderen Tools:
 
 ## Schritt 3: Test in der Webapp
 
-1. Browser oeffnen: http://localhost:8080/MyTheme/app_controler.php
+1. Browser oeffnen: http://localhost:8080/MyTheme/app_controller.php
 2. Neuen Automaten im Menue waehlen.
 3. Beispielwerte eintragen und Auswerten klicken.
 4. Ergebnis pruefen.
 
 Direkter Einstieg:
 
-- http://localhost:8080/MyTheme/controler/getraenkeautomat_controler.php
+- http://localhost:8080/MyTheme/routes/getraenkeautomat_controller.php
 
 ## Schritt 4: Optionalen API-Test via Terminal
 
@@ -88,7 +88,7 @@ Falls in eurer Schulumgebung ein VNC-Desktop bereitsteht:
 
 1. VNC-Desktop oeffnen.
 2. Dort im Browser die URL aufrufen:
-- http://localhost:8080/MyTheme/app_controler.php
+- http://localhost:8080/MyTheme/app_controller.php
 3. Gleiche Testfaelle wie lokal durchklicken.
 
 Hinweis: VNC ist nur eine alternative Anzeigeumgebung. Die Logik bleibt gleich.

@@ -17,7 +17,7 @@ Dieser Ordner enthaelt die alten Einzeldateien (vor der MVC-Umstrukturierung).
 Neue Features werden nicht mehr in legacy umgesetzt.
 Neue Features werden nur noch in der MVC-Struktur umgesetzt:
 
-- app/controler/
+- app/controller/
 - app/modell/
 - app/view/
 - phpApp/
@@ -25,5 +25,6 @@ Neue Features werden nur noch in der MVC-Struktur umgesetzt:
 
 ## Rueckwaertskompatibilitaet
 
-Die alten Dateipfade im Wurzelordner MyTheme bleiben erhalten und leiten auf app_controler.php weiter.
+Die alten Dateipfade im Wurzelordner MyTheme bleiben erhalten und leiten auf app_controller.php weiter.
+Der bisherige Dateiname app_controler.php bleibt als kompatibler Wrapper erhalten.
 So funktionieren alte Links weiterhin.

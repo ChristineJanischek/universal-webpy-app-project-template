@@ -9,7 +9,7 @@ In diesem Ordner liegen die historischen Einzeldateien aus dem alten funktionale
 
 Die aktiven Einstiegspunkte fuer die aktuelle App sind:
 
-- controler/*_controler.php pro Tool (z. B. controler/volleyball_controler.php)
-- app_controler.php mit tool-Parameter
+- routes/*_controller.php pro Tool (z. B. routes/volleyball_controller.php)
+- app_controller.php mit tool-Parameter
 
-Hinweis: Alte Root-Wrapper wurden entfernt, um die aktive Struktur eindeutig zu halten.
+Hinweis: Der Ordner controler/*_controler.php bleibt als Legacy-Redirect fuer alte Links erhalten.

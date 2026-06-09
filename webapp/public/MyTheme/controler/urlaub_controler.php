@@ -1,5 +1,5 @@
 <?php
 declare(strict_types=1);
 
-header('Location: ../app_controler.php?tool=urlaub');
+header('Location: ../routes/urlaub_controller.php');
 exit;
