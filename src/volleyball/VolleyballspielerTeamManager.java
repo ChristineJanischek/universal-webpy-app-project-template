@@ -1,6 +1,7 @@
 package volleyball;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Model-Klasse: Verwaltet alle Spielerlisten des Volleyball-Teams.
@@ -21,6 +22,14 @@ import java.util.ArrayList;
  */
 public class VolleyballspielerTeamManager {
 
+    private static final List<String> STANDARD_STARTAUFSTELLUNG = List.of(
+        "Armin", "Batu", "Kai", "Sven", "Paul", "Milan"
+    );
+
+    private static final List<String> STANDARD_ERSATZBANK = List.of(
+        "Chris", "Dennis", "Emin", "Goran", "Luca", "Nico"
+    );
+
     /** Liste der Kaderspieler (aktive Startaufstellung) */
     private final ArrayList<Kaderspieler> startaufstellung;
 
@@ -34,20 +43,14 @@ public class VolleyballspielerTeamManager {
      */
     public VolleyballspielerTeamManager() {
         startaufstellung = new ArrayList<>();
-        startaufstellung.add(new Kaderspieler("Armin"));
-        startaufstellung.add(new Kaderspieler("Batu"));
-        startaufstellung.add(new Kaderspieler("Kai"));
-        startaufstellung.add(new Kaderspieler("Sven"));
-        startaufstellung.add(new Kaderspieler("Paul"));
-        startaufstellung.add(new Kaderspieler("Milan"));
+        for (String name : STANDARD_STARTAUFSTELLUNG) {
+            startaufstellung.add(new Kaderspieler(name));
+        }
 
         ersatzBank = new ArrayList<>();
-        ersatzBank.add(new Ersatzspieler("Chris"));
-        ersatzBank.add(new Ersatzspieler("Dennis"));
-        ersatzBank.add(new Ersatzspieler("Emin"));
-        ersatzBank.add(new Ersatzspieler("Goran"));
-        ersatzBank.add(new Ersatzspieler("Luca"));
-        ersatzBank.add(new Ersatzspieler("Nico"));
+        for (String name : STANDARD_ERSATZBANK) {
+            ersatzBank.add(new Ersatzspieler(name));
+        }
     }
 
     // ---- Lesender Zugriff ----
@@ -76,12 +79,12 @@ public class VolleyballspielerTeamManager {
      * @param auswahl 1 = Startaufstellung, 2 = Ersatzspieler
      * @return Die entsprechende Spielerliste oder {@code null} bei ungültiger Auswahl
      */
-    public ArrayList<? extends Spieler> holeSpielerliste(int auswahl) {
-        switch (auswahl) {
-            case 1: return startaufstellung;
-            case 2: return ersatzBank;
-            default: return new ArrayList<>();
-        }
+    public List<? extends Spieler> holeSpielerliste(int auswahl) {
+        return switch (auswahl) {
+            case 1 -> List.copyOf(startaufstellung);
+            case 2 -> List.copyOf(ersatzBank);
+            default -> List.of();
+        };
     }
 
     // ---- Geschäftslogik ----
@@ -94,10 +97,12 @@ public class VolleyballspielerTeamManager {
      * @param nach    Index des zweiten Spielers (0-basiert)
      */
     public void tausche(int auswahl, int von, int nach) {
-        if (auswahl == 1) {
-            tauschen(startaufstellung, von, nach);
-        } else if (auswahl == 2) {
-            tauschen(ersatzBank, von, nach);
+        switch (auswahl) {
+            case 1 -> tauschen(startaufstellung, von, nach);
+            case 2 -> tauschen(ersatzBank, von, nach);
+            default -> {
+                // Keine Aktion fuer ungueltige Auswahlen.
+            }
         }
     }
 
@@ -125,10 +130,17 @@ public class VolleyballspielerTeamManager {
      * @param stelle      Einfügeposition (0-basiert)
      */
     public void einfuegen(int auswahl, String spielerName, int stelle) {
-        if (auswahl == 1) {
-            startaufstellung.add(stelle, new Kaderspieler(spielerName));
-        } else if (auswahl == 2) {
-            ersatzBank.add(stelle, new Ersatzspieler(spielerName));
+        String validierterName = spielerName == null ? "" : spielerName.trim();
+        if (validierterName.isEmpty()) {
+            throw new IllegalArgumentException("Spielername darf nicht leer sein.");
+        }
+
+        if (auswahl == 1 && stelle >= 0 && stelle <= startaufstellung.size()) {
+            startaufstellung.add(stelle, new Kaderspieler(validierterName));
+        } else if (auswahl == 2 && stelle >= 0 && stelle <= ersatzBank.size()) {
+            ersatzBank.add(stelle, new Ersatzspieler(validierterName));
+        } else {
+            throw new IllegalArgumentException("Ungueltige Auswahl oder Einfuegeposition.");
         }
     }
 
@@ -137,11 +149,11 @@ public class VolleyballspielerTeamManager {
      *
      * @return ArrayList aller Spieler im Kader
      */
-    public ArrayList<Spieler> getKader() {
+    public List<Spieler> getKader() {
         ArrayList<Spieler> kader = new ArrayList<>();
         kader.addAll(startaufstellung);
         kader.addAll(ersatzBank);
-        return kader;
+        return List.copyOf(kader);
     }
 
     // ---- Ausgabe-Methoden ----
@@ -179,7 +191,7 @@ public class VolleyballspielerTeamManager {
      * @param liste Die zu formatierende Spielerliste
      * @return Zeilengetrennter String aller Spielernamen
      */
-    private String spielerlisteAlsString(ArrayList<? extends Spieler> liste) {
+    private String spielerlisteAlsString(List<? extends Spieler> liste) {
         StringBuilder sb = new StringBuilder();
         for (Spieler spieler : liste) {
             sb.append(spieler.getName()).append("\n");

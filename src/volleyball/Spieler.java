@@ -1,5 +1,7 @@
 package volleyball;
 
+import java.util.Objects;
+
 /**
  * Abstrakte Basisklasse für alle Volleyball-Spieler.
  *
@@ -8,10 +10,10 @@ package volleyball;
  *
  * <p>Unterklassen: {@link Kaderspieler}, {@link Ersatzspieler}</p>
  */
-public abstract class Spieler {
+public sealed abstract class Spieler permits Kaderspieler, Ersatzspieler {
 
     /** Name des Spielers */
-    private String name;
+    private final String name;
 
     /**
      * Konstruktor mit Namensparameter.
@@ -19,7 +21,7 @@ public abstract class Spieler {
      * @param name Der Name des Spielers
      */
     public Spieler(String name) {
-        this.name = name;
+        this.name = Objects.requireNonNull(name, "name darf nicht null sein").trim();
     }
 
     /**
@@ -29,15 +31,6 @@ public abstract class Spieler {
      */
     public String getName() {
         return name;
-    }
-
-    /**
-     * Setzt den Namen des Spielers.
-     *
-     * @param name Der neue Name des Spielers
-     */
-    public void setName(String name) {
-        this.name = name;
     }
 
     /**

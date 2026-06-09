@@ -27,14 +27,12 @@ webapp/
    |- MyTheme/
       |- app_controller.php
       |- routes/                    # Einstiegspunkte pro Tool
-      |- controler/                 # Legacy-Redirects fuer alte Links
       |- app/
       |  |- controller/             # zentrale Ablaufsteuerung
       |  |- modell/                 # PHP-Logik + Python-Bridge
       |  |- view/                   # HTML/CSS der App
       |- phpApp/                    # PHP-Auswertung
       |- pyApp/                     # Python-Auswertung
-      |- legacy/                    # historische Altstaende
 ```
 
 ## Starten und testen

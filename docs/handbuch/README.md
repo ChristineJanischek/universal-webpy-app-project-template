@@ -50,6 +50,7 @@ ls routinen/langfristig/        # Jährlich/Strategisch
 
 ### 🧪 Live-Tests & Anleitungen
 - **[anleitungen/JAVA-LIVE-TEST.md](anleitungen/JAVA-LIVE-TEST.md)** - Java-App testen: Headless-Test im Codespace & GUI lokal starten
+- **[anleitungen/JAVA-GUI-NOVNC-SCHRITT-FUER-SCHRITT.md](anleitungen/JAVA-GUI-NOVNC-SCHRITT-FUER-SCHRITT.md)** - Java-GUI im Docker-noVNC-Desktop im Browser starten
 - **[anleitungen/MYTHEME-MVC-ERWEITERUNG.md](anleitungen/MYTHEME-MVC-ERWEITERUNG.md)** - MyTheme als mobile MVC-Webapp erweitern (PHP und Python)
 - **[anleitungen/GETRAENKEAUTOMAT-PHP-SCHRITT-FUER-SCHRITT.md](anleitungen/GETRAENKEAUTOMAT-PHP-SCHRITT-FUER-SCHRITT.md)** - Schueler-Anleitung: kleinen Getraenkeautomaten mit PHP implementieren und testen
 - **[anleitungen/GETRAENKEAUTOMAT-PYTHON-SCHRITT-FUER-SCHRITT.md](anleitungen/GETRAENKEAUTOMAT-PYTHON-SCHRITT-FUER-SCHRITT.md)** - Schueler-Anleitung: kleinen Getraenkeautomaten mit Python implementieren und testen

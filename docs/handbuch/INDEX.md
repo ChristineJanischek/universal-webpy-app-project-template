@@ -17,6 +17,7 @@
 
 ### 🧪 Anleitungen & Live-Tests
 - **[anleitungen/JAVA-LIVE-TEST.md](anleitungen/JAVA-LIVE-TEST.md)** - Java-App kompilieren, Modell-Tests & GUI starten
+- **[anleitungen/JAVA-GUI-NOVNC-SCHRITT-FUER-SCHRITT.md](anleitungen/JAVA-GUI-NOVNC-SCHRITT-FUER-SCHRITT.md)** - Java-GUI in Docker/noVNC im Browser ausfuehren
 - **[anleitungen/MYTHEME-MVC-ERWEITERUNG.md](anleitungen/MYTHEME-MVC-ERWEITERUNG.md)** - Schritt-fuer-Schritt zur Erweiterung der MyTheme MVC-Webapp
 - **[anleitungen/GETRAENKEAUTOMAT-PHP-SCHRITT-FUER-SCHRITT.md](anleitungen/GETRAENKEAUTOMAT-PHP-SCHRITT-FUER-SCHRITT.md)** - Schuelerleitfaden fuer einen Getraenkeautomaten mit PHP
 - **[anleitungen/GETRAENKEAUTOMAT-PYTHON-SCHRITT-FUER-SCHRITT.md](anleitungen/GETRAENKEAUTOMAT-PYTHON-SCHRITT-FUER-SCHRITT.md)** - Schuelerleitfaden fuer einen Getraenkeautomaten mit Python
@@ -36,6 +37,7 @@
 - **[routinen/kurzfristig/](routinen/kurzfristig/)** - Täglich/Wöchentlich (Kurzzeitaufgaben)
 - **[routinen/mittelfristig/](routinen/mittelfristig/)** - Monatlich/Quartalsweise (Mittelfristig)
 - **[routinen/langfristig/](routinen/langfristig/)** - Jährlich/Strategisch (Langfristig)
+- **[routinen/langfristig/LF-ROUTINE-001-MIGRATION-ALTPROJEKTE-MULTI-SPRACHEN.md](routinen/langfristig/LF-ROUTINE-001-MIGRATION-ALTPROJEKTE-MULTI-SPRACHEN.md)** - Dauerhafte Migration alter Rechner/Automaten in alle Zielsprachen
 
 ---
 

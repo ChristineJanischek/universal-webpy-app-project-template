@@ -6,7 +6,7 @@ package volleyball;
  * <p>Erbt die gemeinsamen Eigenschaften von der abstrakten Klasse {@link Spieler}.
  * Kaderspieler befinden sich in der aktiven Startaufstellung des Teams.</p>
  */
-public class Kaderspieler extends Spieler {
+public final class Kaderspieler extends Spieler {
 
     /**
      * Konstruktor mit Namensparameter.

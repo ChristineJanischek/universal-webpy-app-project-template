@@ -2,3 +2,8 @@
 build/
 __pycache__/
 *.pyc
+
+# Private Projekt-Uploads (nur Hinweise/README versionieren)
+private-project-upload/*
+!private-project-upload/README.md
+

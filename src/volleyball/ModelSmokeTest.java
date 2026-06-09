@@ -1,6 +1,7 @@
 package volleyball;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Headless-Smoke-Test fuer den VolleyballspielerTeamManager.
@@ -82,7 +83,7 @@ public class ModelSmokeTest {
 
     private static void testGetKader() {
         VolleyballspielerTeamManager m = new VolleyballspielerTeamManager();
-        ArrayList<Spieler> kader = m.getKader();
+        List<Spieler> kader = m.getKader();
         assertEqual("Kader enthaelt Kaderspieler-Typ an Position 0",
                 "Kaderspieler", kader.get(0).getSpielerTyp());
         assertEqual("Kader enthaelt Ersatzspieler-Typ an Position 6",

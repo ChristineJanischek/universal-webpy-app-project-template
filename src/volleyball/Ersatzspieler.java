@@ -6,7 +6,7 @@ package volleyball;
  * <p>Erbt die gemeinsamen Eigenschaften von der abstrakten Klasse {@link Spieler}.
  * Ersatzspieler befinden sich auf der Ersatzbank und können eingewechselt werden.</p>
  */
-public class Ersatzspieler extends Spieler {
+public final class Ersatzspieler extends Spieler {
 
     /**
      * Konstruktor mit Namensparameter.

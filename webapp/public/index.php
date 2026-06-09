@@ -1,4 +1,10 @@
 <?php
+// Standard-Einstieg: direkt zur Lern-App; Dashboard bleibt fuer technische Checks erreichbar.
+if (!isset($_GET['dashboard']) || $_GET['dashboard'] !== '1') {
+  header('Location: /MyTheme/app_controller.php', true, 302);
+  exit;
+}
+
 $mysqlHost = getenv('MYSQL_HOST') ?: 'mysql';
 $mysqlPort = getenv('MYSQL_PORT') ?: '3306';
 $mysqlDb = getenv('MYSQL_DATABASE') ?: 'appdb';

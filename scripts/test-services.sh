@@ -40,4 +40,7 @@ docker compose exec -T mysql mysql -u"${MYSQL_USER:-appuser}" -p"${MYSQL_PASSWOR
 echo "[test] Starte Java-Smoke-Test..."
 ./scripts/test-java.sh
 
+echo "[test] Pruefe Sprach-Paritaet (Schema/PHP/Python)..."
+bash scripts/validate-tool-parity.sh
+
 echo "[test] Alle Checks erfolgreich"

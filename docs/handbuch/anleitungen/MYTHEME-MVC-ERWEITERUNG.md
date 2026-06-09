@@ -26,11 +26,6 @@ webapp/public/MyTheme/
 |  |- urlaub_controller.php
 |  |- umsatz_controller.php
 |  |- volleyball_controller.php
-|- controler/
-|  |- *_controler.php (Legacy-Redirects)
-|- legacy/
-|  |- README.md
-|  |- tools/
 |- app/
 |  |- controller/
 |  |  |- tools_controller.php
@@ -47,10 +42,10 @@ webapp/public/MyTheme/
 |  |- FormEvaluator.py
 ```
 
-## Legacy-Strategie (Uebergang)
+## Routing-Strategie
 
-Die bisherigen Einzeldateien wurden nach legacy/tools verschoben.
-Die alten Root-Dateien wurden entfernt, damit nur noch die neue Controller-Struktur aktiv ist.
+Die Einstiegspfade liegen ausschliesslich unter `routes/*_controller.php`.
+Alle Routen fuehren konsistent auf `app_controller.php?tool=<name>`.
 
 Beispiel-Mapping:
 
@@ -64,17 +59,11 @@ Beispiel-Mapping:
 - routes/umsatz_controller.php -> app_controller.php?tool=umsatz
 - routes/volleyball_controller.php -> app_controller.php?tool=volleyball
 
-Spezielle Klarstellung Volleyball:
-
-- legacy/tools/volleyball_form_view_legacy.php = alte Formularsicht
-- legacy/tools/volleyball_modell_legacy.php = alte funktionale Logik
-- routes/volleyball_controller.php = neuer klarer Einstiegspunkt in die MVC-App
-
 Didaktischer Vorteil:
 
-1. Alte Lernstaende bleiben sichtbar.
-2. Neue Entwicklung bleibt klar in der MVC-Struktur.
-3. Alte Links aus Unterrichtsmaterialien funktionieren weiterhin.
+1. Neue Entwicklung bleibt klar in der MVC-Struktur.
+2. Einheitliche Einstiegspunkte vermeiden Redundanzen.
+3. Unterrichtsmaterial kann direkt auf die neuen Routen referenzieren.
 
 ## Was wurde didaktisch verbessert?
 
@@ -131,7 +120,7 @@ Didaktischer Vorteil:
 
 ## Beispielidee: kleiner Getraenkeautomat
 
-Ausgangspunkt: Inhalte aus docs/handbuch/legacy-analysis/Getraenkeautomat_lsg.zip didaktisch uebernehmen.
+Ausgangspunkt: didaktische Aufgabenstellung im Unterricht definieren und in der neuen MVC-Struktur umsetzen.
 
 Vorschlag fuer Felder:
 - getraenk (Select: Wasser, Saft, Cola)
@@ -155,6 +144,6 @@ Typische Logik:
 ## Wartungstipps
 
 1. Erst Modelllogik sauber entwickeln, dann View-Felder anpassen.
-2. Alte Einzeldateien nur im legacy-Ordner halten.
+2. Ausschliesslich die aktuelle MVC-Struktur erweitern.
 3. Pro Erweiterung kurze Doku im Handbuch aktualisieren.
 4. Bei Teams: eine Person fuer Schema, eine fuer Modell, eine fuer Tests.

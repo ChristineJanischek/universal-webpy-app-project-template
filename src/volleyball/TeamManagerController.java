@@ -1,6 +1,6 @@
 package volleyball;
 
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Controller-Klasse: Vermittler zwischen View und Model.
@@ -102,8 +102,8 @@ public class TeamManagerController {
      * @return Anzahl der Spieler, oder 0 bei ungültiger Auswahl
      */
     public int getListengroesse(int auswahl) {
-        ArrayList<? extends Spieler> liste = manager.holeSpielerliste(auswahl);
-        return liste != null ? liste.size() : 0;
+        List<? extends Spieler> liste = manager.holeSpielerliste(auswahl);
+        return liste.size();
     }
 
     /**

@@ -338,7 +338,7 @@ CREATE TABLE Spieler (
 ## 6. Technologie & Stackanforderungen
 
 ### 6.1 Backend
-- **Sprachen:** Python 3.9+, Java 11+
+- **Sprachen:** Python 3.9+, Java 21+
 - **Frameworks:** Flask/FastAPI (Python), Spring Boot (Java)
 - **Datenbank:** MySQL 8.0+
 - **Persistenz:** ORM (SQLAlchemy für Python, Hibernate für Java)

@@ -62,6 +62,18 @@ services:
     networks:
       - appnet
 
+  java-test:
+    image: eclipse-temurin:21-jdk
+    profiles:
+      - test
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace:rw
+    entrypoint:
+      - /bin/bash
+      - -lc
+      - mkdir -p build/java && javac --release 21 -d build/java src/volleyball/*.java && java -cp build/java volleyball.ModelSmokeTest
+
 volumes:
   mysql_data:
 

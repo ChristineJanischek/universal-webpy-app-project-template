@@ -26,12 +26,12 @@ java -version
 
 Erwartete Ausgabe (Beispiel):
 ```
-openjdk version "17.0.x" ...
+openjdk version "21.0.x" ...
 ```
 
 Falls Java fehlt:
 ```bash
-sdk install java 17-ms
+sdk install java 21-tem
 ```
 
 ### Schritt 2 – Kompilieren und Modell-Tests ausführen (ein Befehl)
@@ -41,8 +41,9 @@ bash scripts/test-java.sh
 ```
 
 Dieser Befehl:
-1. Kompiliert alle Java-Dateien aus `src/volleyball/` nach `build/java/`
+1. Kompiliert alle Java-Dateien aus `src/volleyball/` mit `--release 21` nach `build/java/`
 2. Führt `ModelSmokeTest` aus – 13 Tests der Kernlogik ohne Display
+3. Nutzt automatisch den Docker-Service `java-test`, falls lokal kein JDK 21+ vorhanden ist
 
 Erwartete Ausgabe:
 ```
@@ -77,7 +78,7 @@ Erwartete Ausgabe:
 
 ```bash
 mkdir -p build/java
-javac -d build/java src/volleyball/*.java
+javac --release 21 -d build/java src/volleyball/*.java
 ```
 
 ### Schritt 4 – Einzelnen Modell-Test direkt aufrufen (optional)
@@ -95,14 +96,14 @@ Im Codespace ist kein Display vorhanden – dafür bitte die lokale Java-Install
 
 ### Voraussetzung
 
-- Java 17+ lokal installiert (z.B. via SDKMAN oder offizieller Installer)
+- Java 21+ lokal installiert (z.B. via SDKMAN oder offizieller Installer)
 - Repository lokal geklont **oder** VS Code verbindet sich via Remote-Container mit X11-Forwarding
 
 ### Schritt 1 – Kompilieren
 
 ```bash
 mkdir -p build/java
-javac -d build/java src/volleyball/*.java
+javac --release 21 -d build/java src/volleyball/*.java
 ```
 
 ### Schritt 2 – GUI starten
@@ -136,6 +137,8 @@ Dieser Befehl schließt `scripts/test-java.sh` automatisch mit ein.
 
 Voraussetzung: Docker-Dienste laufen bereits (`bash scripts/start-services.sh`).
 
+Falls lokal kein JDK 21+ vorhanden ist, fuehrt `scripts/test-java.sh` die Java-Tests automatisch im Docker-Compose-Service `java-test` (Image `eclipse-temurin:21-jdk`) aus.
+
 ---
 
 ## Troubleshooting
@@ -146,8 +149,8 @@ Ursache: Falsche `javac`-Ausführungsebene.
 
 Lösung: Befehl muss im Projektroot ausgeführt werden:
 ```bash
-cd /workspaces/edu-code-projecttemplate
-javac -d build/java src/volleyball/*.java
+cd /workspaces/universal-webpy-app-project-template
+javac --release 21 -d build/java src/volleyball/*.java
 ```
 
 ### Fehler: `java.awt.HeadlessException`
@@ -166,7 +169,7 @@ Ursache: Classpath fehlt oder Kompilierung nicht ausgeführt.
 Lösung:
 ```bash
 mkdir -p build/java
-javac -d build/java src/volleyball/*.java
+javac --release 21 -d build/java src/volleyball/*.java
 java -cp build/java volleyball.MainWindow
 ```
 
